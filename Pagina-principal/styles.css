@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #D6EEF2;
+}
+
+/* Header */ 
+
+.header {
+background-color: #D6EEF2
+}
+.list,.main-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.main-list {
+    display: flex;
+    flex-direction: row;
+}
+.list {
+
+}
+.list-item a, .main-list-item a {
+    text-decoration: none;
+    color: black;
+}

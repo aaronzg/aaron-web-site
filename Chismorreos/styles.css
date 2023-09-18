@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+}
+
+/* Header menu */
+
+.nav_header {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(rgb(174, 0, 255),blue);
+}
+.navBar{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+}
+.nav_list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.nav_title {
+    font-size: 44px;
+    display: block;
+    width: 100vw;
+    text-align: center;
+    margin-top: 12px;
+}
+.nav_link {
+    color: #fff;
+    text-decoration: none;
+}
+@media (min-width: 1000px) {
+    .navBar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+    .nav_list {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        gap: 15px;
+        justify-content: end;
+        margin-top: 15px;
+        margin-right:24px;
+        align-items: center;
+    }
+    .nav_title {
+        text-align: start;
+        font-size: 44px;
+        margin-left: 24px;
+        width: auto;
+    }
+}
+
+.menu {
+    background:linear-gradient(blue, white) ;
+    height: 95vh;
+    display: grid;
+    place-items: center;
+}
+.menu_list {
+    background-color: #f1f1f1;
+    display: block;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 1rem;
+    list-style: none;
+    padding: 2.5rem;
+}
+.menu_item {
+    margin-bottom: 3rem;
+}
+.menu_item a {
+    text-decoration: none;
+    color: black;
+}
+
+/* CHISME SECTION */
+
+.chisme_section {
+    
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 17px;
+    text-align: center;
+}
+.chisme_body {
+    margin-top: 32px;
+    text-align: start;
+    margin-bottom: 32px;
+}
+ ul {
+    margin-bottom: 13px;
+    list-style-type: none;
+}
+.chisme_section img {
+    width: 80%;
+    border-radius: .5rem;
+}
+main {
+    width:  100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* FOOTER */
+
+#contact h2, #contact p {
+    text-align: center;
+}
+#contact {
+    margin-top: 35vh;
+    background: linear-gradient(blue, red);
+    color: white;
+    padding: 20px 0;
+    border-top: solid 10px lightgray;
+    border-bottom: solid 10px lightgray;
+}
+#contact p {
+    margin-top: 18px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+form textarea {
+    width: 348px;
+    height: 65px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+form input {
+    width: 348px;
+    padding: 11px 0;
+    border-radius: 12px;
+}
+footer {
+    background-color: lightgray;
+    font-size: 12px;
+}
+
+#submit-btn {
+    padding: 16px 180px;
+    display: block;
+    background-color: lightgray;
+    text-align: center;
+    border-radius: 100px;
+    text-decoration: none;
+    color: black;
+}

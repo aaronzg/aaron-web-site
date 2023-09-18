@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'open sans',sans-serif;
+    background-color: #1c1c1c;
+    color: #cecece;
+}
+.container {
+    width: 200px;
+}
+.content {
+    width: 100vw;
+}
+.content p {
+    text-align: center;
+}
+.content h1 {
+    text-align: center;
+}
+.window {
+    width: 256px;
+    
+  /*  top: 35%;
+    right: 20%;*/
+    margin: 0 auto;
+    background-color: #cecece;
+    color: #1c1c1c;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 1.2rem;
+    margin-top: 10rem;
+    width: 25rem;
+}
+.window h2 {
+    margin-bottom: 1.2rem;
+}
+.window .button {
+    padding: .5rem;
+    border: transparent;
+    border-radius: .5rem;
+    font-size: 1rem;
+    color: #ececee;
+    background-color: #cc8519;
+    cursor: pointer;
+}
+
+.window p {
+    margin-bottom: 1.5rem;
+}
+
+.wasa {
+    text-align: center;
+    text-decoration: none;
+    background-color:#cc8519;
+    color:#cecece;
+    padding: 1.2rem;
+    border-radius: .6rem;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    position: relative;
+    margin: 0 auto;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 2rem;
+}
+.wasa.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 1.2rem;
+}
+.content { 
+    position: absolute;
+    z-index: -1;
+    top: 5%;
+}
+
+/* window animation */
+.window {
+    animation-name: desvanecido;
+    animation-duration: 1.5s;
+    animation-fill-mode: backwards;
+    box-shadow: 0 0 0 100vmax #1c1c1c81;
+}
+@keyframes desvanecido {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.name {
+    padding: .5rem .4rem;
+    margin-bottom: 1.6rem;
+    border-radius: .5rem;
+}
+
+#formulario {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}

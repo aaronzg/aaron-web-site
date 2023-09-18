@@ -1,0 +1,224 @@
+:root {
+    --buton1: rgb(236, 194, 9);
+}
+
+body{font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    background-color: #ededed;
+}
+*{
+    box-sizing: border-box;
+}
+
+/* nav menu */
+
+#header-img {
+    width: 300px;
+}
+#header {
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    top: 0 ;
+    margin-bottom: 32px;
+    background-color: #ededed;
+    z-index: 3;
+}
+ul {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+.nav-link {
+    margin-left: 0px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 5px;
+}
+.nav-link:hover {
+    color: white;
+    background-color: black;
+}
+@media (max-width: 653px) {
+    #header {
+        flex-direction: column;
+    }
+    #header-img {
+        margin-top: 23px;
+    }
+    .slogan-form {
+        position: absolute;
+        top:  50px;
+        width: 100%;
+
+    }
+    #features {
+        position: absolute;
+        top: 300px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .contenedorMedia {
+        margin-top: 800px;
+    }
+    img[alt="icon"]{
+        display: none
+    }
+    #pricing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .dsContainer {
+        max-width: 320px;
+        margin-bottom: 15px;
+        height: 320px;
+    }
+    .dsContainer:first-of-type{
+        margin-top: 32px;
+    }
+    .dsContainer p {
+        margin: 12px 73px;
+        height: 292;
+    }
+}
+
+/* FORM */
+
+.slogan-form{
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 33px;
+    z-index: 1;
+}
+
+#email{
+    padding-top:   3px;
+    padding-bottom: 5px;
+    padding-right: 7px;
+    border-radius: 7px;
+}
+#submit {
+    background-color: rgb(231, 231, 26);
+    border-style: none;
+    font-family: monospace;
+    padding: 8px ;
+    border-radius: 10px;
+}
+#submit:hover {
+    background-color:orange;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#form input {
+    width: 300px;
+}
+input[id="submit"] {
+    margin-top: 12px;
+}
+/* FEATURES */
+.description {
+    margin-top: 40px;
+    text-align: center;
+}
+.description h3 {
+    text-align: start;
+
+}
+
+#features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 74px;
+}
+
+
+
+/* VIDEO */
+
+.contenedorMedia{
+    display: grid;
+    place-items: center;
+}
+#video {
+    border-radius:  32px;
+}
+
+/* PRICING */
+
+#pricing {
+    display: flex;
+    margin-top: 52px;
+    justify-content: space-around;
+}
+ h4 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+}
+.dsContainer {
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    padding:0px;
+    border: 1px solid ;
+    border-radius: 5px;
+    max-width: 300px;
+    min-width: 250px;
+    margin: 7px;
+}
+.level {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 7px 0;
+    background-color: #ededed;
+    border-radius: 5px;
+}
+
+.dsContainer p {
+    line-height: 30px;
+}
+
+.boton {
+    padding: 10px 40px;
+    margin-top: 64px; 
+    background-color: var(--buton1);
+    border: var(--buton1) ;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #dad7d7;
+    margin-top:100px;
+    height: 100%;
+    text-align: end;
+    padding: 16px 0;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    margin-right: 14px;
+    font-weight: 700;
+}
+footer p {
+    margin-bottom: 0;
+    margin-right: 14px;
+}

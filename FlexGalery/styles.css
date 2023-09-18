@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'roboto', sans-serif;
+    
+}
+.galery {
+    margin-bottom: 52px;
+}
+.galery h1 {
+    font-weight: 700;
+    margin: 20px 0 15px 0;
+    text-align: center;
+    font-size: 2.8rem;
+}
+.line {
+    border-top: 5px solid #0088c0;
+    margin-bottom: 42px;
+}
+.container {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-around;
+}
+.img-container {
+    width: 32%;
+    position: relative;
+    height: 300px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0, .75);
+}
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #0086c091;
+    width: 100%;
+    height: 0%;
+    display: grid;
+    place-items: center;
+    transition: .7s ease;
+    overflow: hidden;
+    font-weight: 300;
+}
+.img-container:hover .overlay{
+    height: 100%;
+    cursor: pointer;
+}
+.overlay h2 {
+    color: white;
+    font-size: 30px;
+}
+@media  (max-width: 1000px) {
+    .container {
+        width: 95%;
+    }
+}
+@media (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
+    .img-container {
+        width: 48%;
+    }
+}
+@media (max-width: 450px) {
+    h1 {
+        font-size: 22px;
+    }
+    .container{
+        width: 90%;
+    }
+    .img-container {
+        width: 95%;
+    }
+}
